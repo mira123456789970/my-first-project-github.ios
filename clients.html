@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Наши клиенты</title>
+  <style>
+    body {
+      background: url('fon2.jpg') center/cover no-repeat;
+      background: cover;
+      height : 100vh;
+      font-family: Arial, sans-serif;
+      color: #FFD700; 
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+    h1 {
+      margin: 20px;
+      text-shadow: 2px 2px 6px black;
+    }
+    .clients {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      padding: 20px;
+      margin-top: 150px;
+    }
+    .card {
+      background: rgba(0, 0, 0, 0.7);
+      padding: 15px;
+      border-radius: 10px;
+      width: 250px;
+      color: white;
+      box-shadow: 0 0 10px rgba(255, 215, 0, 0.6);
+    }
+    .card img {
+      width: 120px;
+      height: 120px;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #FFD700; 
+    }
+    .card h3 {
+      margin: 10px 0 5px;
+      color: #FFD700; 
+    }
+    .card p {
+      font-size: 14px;
+    }
+    .back-btn {
+      margin: 20px;
+      padding: 10px 20px;
+      background: #FFD700; 
+      color: black;
+      font-weight: bold;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+    }
+    .back-btn:hover {
+      background: black;
+      color: #FFD700;
+      border: 1px solid #FFD700;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Наши клиенты</h1>
+
+  <div class="clients">
+    <div class="card">
+      <img src="IVAN.jpg" alt="Клиент 1">
+      <h3>Бакытбек Жолдош уулу</h3>
+      <p>«Купил здесь свой первый BMW X6. Цена адекватная, обслуживание отличное!»</p>
+      <img src="car1.jpg" alt="BMW X6">
+    </div>
+
+    <div class="card">
+      <img src="MARI.jpg" alt="Клиент 2">
+      <h3>Нуриза Сатар кызы</h3>    
+      <p>«Очень довольна покупкой Mercedes-Benz. Консультанты помогли выбрать идеальный вариант, я довольна!»</p>
+      <img src="car2.jpg" alt="Mercedes-Benz CLA">
+    </div>
+
+    <div class="card">
+      <img src="ALEX.jpg" alt="Клиент 3">
+      <h3>Айбк Токтосун уулу</h3>
+      <p>«Выбрал идеальную Audi. Машина очень комфортная и экономичная.Отличный выбор.Спасибо!»</p>
+      <img src="car3.jpg" alt="Audi A6">
+    </div>
+  </div>
+
+  <button class="back-btn" onclick="location.href='index.html'">Назад</button>
+
+</body>
+</html>
